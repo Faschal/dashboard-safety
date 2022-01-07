@@ -11,14 +11,19 @@
                     <tr>
                      <td width="40%" align="right"><label>Select File for Upload</label></td>
                      <td width="30"><input type="file" name="select_file" id="select_file" /></td>
-                     <td width="30%" align="left"><input type="submit" name="upload" id="upload" class="btn btn-primary" value="Upload"></td>
+                     <td width="35%" align="left"><input type="submit" name="upload" id="upload" class="btn btn-primary" value="Upload"></td>
                     </tr>
                     <tr>
                      <td width="40%" align="right"></td>
                      <td width="30"><span class="text-muted">xls, xlsx, csv</span></td>
-                     <td width="30%" align="left"></td>
+                     <td width="35%" align="left"></td>
                     </tr>
                    </table>
+                   <div class="row">
+                    <div class="offset-md-8">
+                        <a href="/" class="btn btn-primary">BACK</a>
+                    </div>
+                </div>
             </div>
         </form>
     </div>

@@ -58,6 +58,19 @@
                 text-transform: uppercase;
             }
 
+            button {
+                display: inline-block;                             
+                border-radius: 10px;
+                border: 2px double #636b6f;
+                
+                text-align: center;
+                letter-spacing: .1rem;
+                font-size: 13px;
+                padding: 8px;
+                width: 100px;                
+                cursor: pointer;                
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -66,9 +79,14 @@
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="top-right links">                    
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <button type="submit" class="button-style">
+                                Logout
+                            </button>
+                        </form>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 

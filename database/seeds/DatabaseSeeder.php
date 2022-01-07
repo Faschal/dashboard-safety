@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SpeedometerSeeder::class,
             PyramidSeeder::class,
+            UserSeeder::class,
         ]);
     }
 }
