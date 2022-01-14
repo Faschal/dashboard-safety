@@ -6,7 +6,7 @@
 @section('content')
 
     <img src="{{ asset('img/download2.jpeg') }}" class="img-logo1" alt="logo" srcset="">                     
-    <img src="{{ asset('img/download.jpeg') }}" class="img-logo2" alt="logo" srcset="">                     
+    <img src="{{ asset('img/download.png') }}" class="img-logo2" alt="logo" srcset="">                     
     
     <div class="triangle">
         <div class="first">    
@@ -30,7 +30,7 @@
             NEARMISS POTENSIAL (LTI)
         </div>
         <div class="fifth">
-            <div class="container">
+            <div class="container" id="container">
                 <div class="box1">
                     <table>
                         <tr>
@@ -116,6 +116,12 @@
         var number1_2 = "{{ $data['lingkaran_1_2'] }}";
         var number2_1 = "{{ $data['lingkaran_2_1'] }}";
         var number2_2 = "{{ $data['lingkaran_2_2'] }}";
-    </script>
+
+        var triangle_1 = "{{ $data['lost_time'] }}";
+        var triangle_2 = "{{ $data['medical_treatment'] }}";
+        var triangle_3 = "{{ $data['work_injury'] }}";
+        var triangle_4 = "{{ $data['nearmiss_potensial'] }}";
+
+    </script>    
     <script src="{{ asset('js/pyramid.js') }}"></script>
 @endsection
