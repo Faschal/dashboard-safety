@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'admin@tatalogam.com',            
-            'password' => Hash::make('safety@123'),
+            'password' => Hash::make('Safety@123'),
         ]);
     }
 }

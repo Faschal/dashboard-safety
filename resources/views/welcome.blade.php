@@ -51,7 +51,7 @@
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 17px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -75,6 +75,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        <link rel="stylesheet" href="{{ asset("css/main.css") }}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -103,10 +104,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('pyramid.input') }}">Input Data Pyramid</a>
+                    @auth                        
+                        <a href="{{ route('pyramid.input') }}">Input Data Pyramid</a>
+                    @endauth
                     <a href="{{ route('pyramid') }}">Pyramid</a>
                     <a href="{{ route('speedometer') }}">Speedometer</a>         
-                    <a href="{{ route('speedometer.input') }}">Input Data Speedometer</a>           
+                    @auth                        
+                        <a href="{{ route('speedometer.input') }}">Input Data Speedometer</a>           
+                    @endauth
                 </div>
             </div>
         </div>

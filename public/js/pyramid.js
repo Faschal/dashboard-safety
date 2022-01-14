@@ -3,10 +3,10 @@ Chart.defaults.set('plugins.datalabels', {
 color: '#F8F6F4'
 });
 
-var lingkaran_1_1 = number1_1;
-var lingkaran_1_2 = number1_2;
-var lingkaran_2_1 = number2_1;
-var lingkaran_2_2 = number2_2;
+var lingkaran_1_1 = number1_2;
+var lingkaran_1_2 = number1_1;
+var lingkaran_2_1 = number2_2;
+var lingkaran_2_2 = number2_1;
 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {

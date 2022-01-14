@@ -30,6 +30,8 @@ class PyramidController extends Controller
     { 
         $validated = $request->validate([
             'select_file' => 'required|mimes:csv,txt,xls,xlsx|max:2048',
+        ], [
+            'select_file.mimes' => 'The select file must be a file of type: csv, xls, xlsx.',
         ]);       
 
         $import = Excel::import(new PyramidImport, request()->file('select_file'));

@@ -25,8 +25,8 @@ Route::get('/', function () {
 
 Route::get('/pyramid', 'PyramidController@index')->name('pyramid');
 Route::get('/input-pyramid', 'PyramidController@input')->name('pyramid.input')->middleware('auth');
-Route::post('/input-pyramid/import', 'PyramidController@import')->name('pyramid.import')->middleware('auth');
+Route::post('/input-pyramid/import', 'PyramidController@import')->name('pyramid.import');
 
 Route::get('/speedometer', 'SpeedometerController@index')->name('speedometer');
 Route::get('/input-speedometer', 'SpeedometerController@input')->name('speedometer.input')->middleware('auth');
-Route::post('/input-speedometer/import', 'SpeedometerController@import')->name('speedometer.import')->middleware('auth');
+Route::post('/input-speedometer/import', 'SpeedometerController@import')->name('speedometer.import');

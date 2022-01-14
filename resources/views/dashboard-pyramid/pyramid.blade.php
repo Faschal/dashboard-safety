@@ -100,10 +100,10 @@
     </div>
     <div class="row justify-content-end mb-4">            
         <div class="col-sm-4">
-            <input type="text" class="btn btn-danger" value="{{ $data['site_man'] }}" disabled>        
+            <input type="text" id="man-hours" class="btn btn-danger" value="{{ $data['site_man'] }}" disabled>        
         </div>
         <div class="col-sm-5">
-            <input type="text" class="btn btn-primary" value="{{ $data['zero_lti_man'] }}" disabled>
+            <input type="text" id="man-hours" class="btn btn-primary" value="{{ $data['zero_lti_man'] }}" disabled>
         </div>
     </div>
 @endsection
