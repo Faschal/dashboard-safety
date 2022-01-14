@@ -15,9 +15,9 @@ class CreateSpeedometersTable extends Migration
     {
         Schema::create('speedometers', function (Blueprint $table) {
             $table->id();
-            $table->integer('baku_mutu')->nullable();
-            $table->integer('emisi_sumber')->nullable();
-            $table->integer('udara_ambient')->nullable();
+            $table->decimal('baku_mutu',8,2)->nullable();
+            $table->decimal('emisi_sumber',8,2)->nullable();
+            $table->decimal('udara_ambient',8,2)->nullable();
             $table->integer('no_incident')->nullable();
             $table->char('impact',5)->nullable();
             $table->integer('unique_id')->nullable();

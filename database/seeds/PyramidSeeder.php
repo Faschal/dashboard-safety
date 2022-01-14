@@ -13,10 +13,10 @@ class PyramidSeeder extends Seeder
     public function run()
     {
         DB::table('pyramids')->insert([
-            'lost_time' => 1,
-            'medical_treatment' => 2,
-            'work_injury' => 3,
-            'nearmiss_potensial' => 4,
+            'lost_time' => 0,
+            'medical_treatment' => 0,
+            'work_injury' => 0,
+            'nearmiss_potensial' => 0,
             'report_report' => 40,
             'report_nop' => 40,
             'report_lti' => 40,
